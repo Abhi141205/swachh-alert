@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 10
+names: ['Dirty and Unclean _sink', 'Dirty and broken bed', 'Dirty_toilet', 'Garbage', 'OpenDrain', 'liquid_spill', 'medical_waste', 'overflowing_bin', 'ppe_litter', 'unclean floor']
+
+roboflow:
+  workspace: swachh-alert
+  project: swachhalert-5ktkk
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/swachh-alert/swachhalert-5ktkk/dataset/1
