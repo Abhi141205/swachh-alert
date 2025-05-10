@@ -7,12 +7,12 @@ class CustomDropdown extends StatelessWidget {
   final TextEditingController controller;
 
   const CustomDropdown({
-    Key? key,
+    super.key,
     required this.selectedValue,
     required this.categories,
     required this.onChanged,
     required this.controller,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -11,7 +11,7 @@ import 'package:swachh_alert/widget/customtype.dart';
 import 'package:swachh_alert/widget/snakebar.dart';
 
 class CameraLocationAIPage extends ConsumerStatefulWidget {
-  const CameraLocationAIPage({Key? key}) : super(key: key);
+  const CameraLocationAIPage({super.key});
 
   @override
   ConsumerState<CameraLocationAIPage> createState() =>

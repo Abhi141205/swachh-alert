@@ -1,7 +1,6 @@
 // location_providers.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:geolocator/geolocator.dart';
 import 'package:swachh_alert/services/location_services.dart';
 
 // Provider for LocationService

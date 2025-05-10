@@ -7,8 +7,7 @@ import 'package:swachh_alert/services/apiServices.dart';
 
 class VerifyCodeScreen extends StatefulWidget {
   final String phoneNumber;
-  const VerifyCodeScreen({Key? key, required this.phoneNumber})
-    : super(key: key);
+  const VerifyCodeScreen({super.key, required this.phoneNumber});
 
   @override
   State<VerifyCodeScreen> createState() => _VerifyCodeScreenState();
@@ -17,7 +16,7 @@ class VerifyCodeScreen extends StatefulWidget {
 class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
   late Timer _timer;
   int _remainingTime = 30;
-  APIService _apiService = APIService();
+  final APIService _apiService = APIService();
   final List<TextEditingController> otpControllers = List.generate(
     4,
     (_) => TextEditingController(),
@@ -200,9 +199,9 @@ class _VerifyCodeScreenState extends State<VerifyCodeScreen> {
                 child: ElevatedButton(
                   onPressed: () {
                     verifyOtp();
-                    otpControllers.forEach((controller) {
+                    for (var controller in otpControllers) {
                       controller.clear();
-                    });
+                    }
                     Navigator.push(
                       context,
                       MaterialPageRoute(

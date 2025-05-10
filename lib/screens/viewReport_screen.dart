@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ReportSummaryPage extends StatefulWidget {
-  const ReportSummaryPage({Key? key}) : super(key: key);
+  const ReportSummaryPage({super.key});
 
   @override
   State<ReportSummaryPage> createState() => _ReportSummaryPageState();
